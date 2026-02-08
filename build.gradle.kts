@@ -3,19 +3,20 @@ plugins {
 }
 
 allprojects {
-	apply(plugin = "eclipse")
+    repositories {
+        mavenCentral()
+    }
+}
 
-	repositories {
-		mavenCentral()
-	}
+subprojects {
+    apply(plugin = "java")
+    apply(plugin = "eclipse")
 
-	plugins.withId("java") {
-		java {
-			toolchain {
-				languageVersion = JavaLanguageVersion.of(17)
-			}
-		}
-	}
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
 }
 
 java {
