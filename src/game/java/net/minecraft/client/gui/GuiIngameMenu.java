@@ -26,6 +26,7 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.ResourceLocation;
+import me.revilium1.eagmod.GuiCustomMenu;
 
 /**+
  * This portion of EaglercraftX contains deobfuscated Minecraft 1.8 source code.
@@ -85,6 +86,10 @@ public class GuiIngameMenu extends GuiScreen {
 				notifBellButton.setUnread(mc.thePlayer.sendQueue.getNotifManager().getUnread());
 			}
 		}
+
+		this.buttonList.add(
+			new GuiButton(70, this.width - 90, 24, "Test")
+		);
 
 		this.buttonList.add(new GuiButtonWithStupidIcons(4, this.width / 2 - 100, this.height / 4 + 24 + b0,
 				I18n.format("menu.returnToGame", new Object[0]), PauseMenuCustomizeState.icon_backToGame_L,
@@ -213,6 +218,9 @@ public class GuiIngameMenu extends GuiScreen {
 		case 11:
 			this.mc.displayGuiScreen(new GuiScreenNotifications(this));
 			break;
+		case 70:
+			this.mc.displayGuiScreen(new GuiCustomMenu());
+			break;
 		}
 
 	}
@@ -243,6 +251,10 @@ public class GuiIngameMenu extends GuiScreen {
 		String titleStr = I18n.format("menu.game", new Object[0]);
 		int titleStrWidth = fontRendererObj.getStringWidth(titleStr);
 		this.drawString(this.fontRendererObj, titleStr, (this.width - titleStrWidth) / 2, 20, 16777215);
+
+		this.drawRect(width - 100, 24, width, 0, 0xCCAA00FF);
+		this.fontRendererObj.drawString("EagMod", width - 50 - fontRendererObj.getStringWidth("EagMod"), 6, -1);
+
 		if (PauseMenuCustomizeState.icon_title_L != null) {
 			mc.getTextureManager().bindTexture(PauseMenuCustomizeState.icon_title_L);
 			GlStateManager.pushMatrix();
