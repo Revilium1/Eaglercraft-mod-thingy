@@ -221,6 +221,8 @@ public class Items {
 	public static Item prismarine_crystals;
 	public static Item banner;
 
+	public static Item test_item;
+
 	private static Item getRegisteredItem(String name) {
 		return (Item) Item.itemRegistry.getObject(new ResourceLocation(name));
 	}
@@ -416,6 +418,8 @@ public class Items {
 			prismarine_shard = getRegisteredItem("prismarine_shard");
 			prismarine_crystals = getRegisteredItem("prismarine_crystals");
 			banner = getRegisteredItem("banner");
+
+			test_item = getRegisteredItem("test_item");
 		}
 	}
 }
