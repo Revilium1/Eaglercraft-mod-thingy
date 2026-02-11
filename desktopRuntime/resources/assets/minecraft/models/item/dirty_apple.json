@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "items/dirty_apple"
+        "layer0": "items/test_item"
     },
     "display": {
         "thirdperson": {
