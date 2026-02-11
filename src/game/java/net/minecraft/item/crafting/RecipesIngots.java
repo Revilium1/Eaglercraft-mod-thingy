@@ -33,7 +33,9 @@ public class RecipesIngots {
 	 * Adds the ingot recipes to the CraftingManager.
 	 */
 	public void addRecipes(CraftingManager parCraftingManager) {
-		recipeItems = new Object[][] { { Blocks.gold_block, new ItemStack(Items.gold_ingot, 9) },
+		recipeItems = new Object[][] {
+				{ Blocks.test_block, new ItemStack(Items.test_item, 9) },
+				{ Blocks.gold_block, new ItemStack(Items.gold_ingot, 9) },
 				{ Blocks.iron_block, new ItemStack(Items.iron_ingot, 9) },
 				{ Blocks.diamond_block, new ItemStack(Items.diamond, 9) },
 				{ Blocks.emerald_block, new ItemStack(Items.emerald, 9) },
