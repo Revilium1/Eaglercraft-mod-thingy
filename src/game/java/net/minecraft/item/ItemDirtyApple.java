@@ -27,16 +27,19 @@ import net.minecraft.world.World;
  * POSSIBILITY OF SUCH DAMAGE.
  * 
  */
+
 public class ItemDirtyApple extends ItemFood {
 	public ItemDirtyApple(int amount, float saturation, boolean isWolfFood) {
+		
 		super(amount, saturation, isWolfFood);
 		this.setHasSubtypes(true);
+		this.setAlwaysEdible();
 	}
 
 	protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer entityplayer) {
 		if (!world.isRemote) {
-			entityplayer.addPotionEffect(new PotionEffect(Potion.absorption.id, 2400, 0));
-			entityplayer.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 2400, 1));
+			entityplayer.addPotionEffect(new PotionEffect(22, 2400, 0));
+			entityplayer.addPotionEffect(new PotionEffect(2, 2400, 1));
 		}
 		super.onFoodEaten(itemstack, world, entityplayer);
 
