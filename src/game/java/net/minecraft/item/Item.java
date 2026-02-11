@@ -1034,6 +1034,9 @@ public class Item {
 		registerItem(432, (String) "test_item",
 				(new Item()).setUnlocalizedName("testItem").setCreativeTab(CreativeTabs.tabMaterials));
 		registerItemBlock(Blocks.test_block);
+
+		registerItem(433, (String) "dirty_apple",
+				(new ItemDirtyApple(4, 0.3F, true)).setUnlocalizedName("dirtyApple").setCreativeTab(CreativeTabs.tabFood));
 		/*
 		  Record Discs
 		  these are the only items that use ID 2000 and above
