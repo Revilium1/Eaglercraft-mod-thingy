@@ -370,8 +370,19 @@ public class CraftingManager {
 		this.addRecipe(new ItemStack(Blocks.hopper), new Object[] { "I I", "ICI", " I ", Character.valueOf('I'),
 				Items.iron_ingot, Character.valueOf('C'), Blocks.chest });
 		this.addRecipe(new ItemStack(Items.armor_stand, 1),
-				new Object[] { "///", " / ", "/_/", Character.valueOf('/'), Items.stick, Character.valueOf('_'),
-						new ItemStack(Blocks.stone_slab, 1, BlockStoneSlab.EnumType.STONE.getMetadata()) });
+			new Object[] { 
+				"///", 
+				" / ", 
+				"/_/", 
+				Character.valueOf('/'), Items.stick, 
+				Character.valueOf('_'), Items.iron_ingot   // assuming _ maps to iron_ingot
+			}
+		);
+
+
+		this.addShapelessRecipe(new ItemStack(Items.test_item, 3),
+			new Object[] { Blocks.dirt });
+
 		Collections.sort(this.recipes, new Comparator<IRecipe>() {
 			public int compare(IRecipe parIRecipe, IRecipe parIRecipe2) {
 				return parIRecipe instanceof ShapelessRecipes && parIRecipe2 instanceof ShapedRecipes ? 1
