@@ -10,8 +10,7 @@ import net.minecraft.world.World;
 public class ItemDirtyApple extends ItemFood {
 	public ItemDirtyApple(int amount, float saturation, boolean isWolfFood) {
 		
-		super(amount, saturation, isWolfFood);
-		this.setHasSubtypes(true);
+		super(amount, saturation, true);
 		this.setAlwaysEdible();
 	}
 
