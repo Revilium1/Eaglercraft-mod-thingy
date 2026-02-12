@@ -221,8 +221,7 @@ public class Items {
 	public static Item prismarine_crystals;
 	public static Item banner;
 
-	public static Item test_item;
-	public static Item dirty_apple;
+	public static Item ruby;
 
 	private static Item getRegisteredItem(String name) {
 		return (Item) Item.itemRegistry.getObject(new ResourceLocation(name));
@@ -420,8 +419,7 @@ public class Items {
 			prismarine_crystals = getRegisteredItem("prismarine_crystals");
 			banner = getRegisteredItem("banner");
 
-			test_item = getRegisteredItem("test_item");
-			dirty_apple = getRegisteredItem("dirty_apple");
+			ruby = getRegisteredItem("ruby");
 		}
 	}
 }

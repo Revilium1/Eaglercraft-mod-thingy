@@ -56,7 +56,6 @@ public class RecipesFood {
 		parCraftingManager.addShapelessRecipe(new ItemStack(Items.magma_cream),
 				new Object[] { Items.blaze_powder, Items.slime_ball });
 
-		parCraftingManager.addRecipe(new ItemStack(Items.dirty_apple),
-				new Object[] { "DDD", "DAD", "DDD", Character.valueOf('D'), Blocks.dirt, Character.valueOf('A'), Items.apple });
+		
 	}
 }

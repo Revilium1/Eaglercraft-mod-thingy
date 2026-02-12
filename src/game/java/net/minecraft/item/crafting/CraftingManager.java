@@ -380,7 +380,7 @@ public class CraftingManager {
 		);
 
 
-		this.addShapelessRecipe(new ItemStack(Items.test_item, 3),
+		this.addShapelessRecipe(new ItemStack(Items.ruby, 3),
 			new Object[] { Blocks.dirt });
 
 		Collections.sort(this.recipes, new Comparator<IRecipe>() {

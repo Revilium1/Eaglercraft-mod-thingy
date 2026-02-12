@@ -34,7 +34,7 @@ public class RecipesIngots {
 	 */
 	public void addRecipes(CraftingManager parCraftingManager) {
 		recipeItems = new Object[][] {
-				{ Blocks.test_block, new ItemStack(Items.test_item, 9) },
+				{ Blocks.ruby_block, new ItemStack(Items.ruby, 9) },
 				{ Blocks.gold_block, new ItemStack(Items.gold_ingot, 9) },
 				{ Blocks.iron_block, new ItemStack(Items.iron_ingot, 9) },
 				{ Blocks.diamond_block, new ItemStack(Items.diamond, 9) },

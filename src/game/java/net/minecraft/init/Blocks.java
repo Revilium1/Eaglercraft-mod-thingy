@@ -254,7 +254,7 @@ public class Blocks {
 	public static BlockSlab double_stone_slab2;
 	public static BlockSlab stone_slab2;
 
-	public static Block test_block;
+	public static Block ruby_block;
 	/**+
 	 * Returns the Block in the blockRegistry with the specified
 	 * name.
@@ -466,7 +466,7 @@ public class Blocks {
 			double_stone_slab2 = (BlockSlab) getRegisteredBlock("double_stone_slab2");
 			stone_slab2 = (BlockSlab) getRegisteredBlock("stone_slab2");
 
-			test_block = getRegisteredBlock("test_block");
+			ruby_block = getRegisteredBlock("ruby_block");
 		}
 	}
 }

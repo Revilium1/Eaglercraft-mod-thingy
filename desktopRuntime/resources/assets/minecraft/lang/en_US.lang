@@ -3336,6 +3336,5 @@ item.banner.straight_cross.magenta=Magenta Cross
 item.banner.straight_cross.orange=Orange Cross
 item.banner.straight_cross.white=White Cross
 
-item.testItem.name=Test Item
-tile.blockTest.name=Block of Test
-item.dirtyApple.name=Dirty Apple
+item.ruby.name=Ruby
+tile.blockRuby.name=Block of Ruby

@@ -1031,12 +1031,9 @@ public class Item {
 				(new ItemDoor(Blocks.dark_oak_door)).setUnlocalizedName("doorDarkOak"));
 
 		
-		registerItem(432, (String) "test_item",
-				(new Item()).setUnlocalizedName("testItem").setCreativeTab(CreativeTabs.tabMaterials));
-		registerItemBlock(Blocks.test_block);
-
-		registerItem(433, (String) "dirty_apple",
-				(new ItemDirtyApple(4, 0.3F, true)).setUnlocalizedName("dirtyApple").setCreativeTab(CreativeTabs.tabFood));
+		registerItem(432, (String) "ruby",
+				(new Item()).setUnlocalizedName("ruby").setCreativeTab(CreativeTabs.tabMaterials));
+		registerItemBlock(Blocks.ruby_block);
 		/*
 		  Record Discs
 		  these are the only items that use ID 2000 and above

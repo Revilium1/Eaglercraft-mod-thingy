@@ -1106,8 +1106,8 @@ public class RenderItem implements IResourceManagerReloadListener {
 				"red_mushroom_block");
 		this.registerBlock(Blocks.dragon_egg, "dragon_egg");
 
-		this.registerItem(Items.test_item, "test_item");
-		this.registerBlock(Blocks.test_block, "test_block");
+		this.registerItem(Items.ruby, "ruby");
+		this.registerBlock(Blocks.ruby_block, "ruby_block");
 	}
 
 	public void onResourceManagerReload(IResourceManager var1) {
