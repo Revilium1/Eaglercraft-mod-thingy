@@ -1034,6 +1034,16 @@ public class Item {
 		registerItem(432, (String) "ruby",
 				(new Item()).setUnlocalizedName("ruby").setCreativeTab(CreativeTabs.tabMaterials));
 		registerItemBlock(Blocks.ruby_block);
+		registerItem(433, (String) "ruby_helmet",
+				(new ItemArmor(ItemArmor.ArmorMaterial.RUBY, 2, 0)).setUnlocalizedName("helmetRuby"));
+		registerItem(434, (String) "ruby_chestplate",
+			(new ItemArmor(ItemArmor.ArmorMaterial.RUBY, 2, 1)).setUnlocalizedName("chestplateRuby"));
+		registerItem(435, (String) "ruby_leggings",
+			(new ItemArmor(ItemArmor.ArmorMaterial.RUBY, 2, 2)).setUnlocalizedName("leggingsRuby"));
+		registerItem(436, (String) "ruby_boots",
+			(new ItemArmor(ItemArmor.ArmorMaterial.RUBY, 2, 3)).setUnlocalizedName("bootsRuby"));
+		registerItem(437, (String) "ruby_apple",
+				(new Item()).setUnlocalizedName("rubyApple").setCreativeTab(CreativeTabs.tabFood));
 		/*
 		  Record Discs
 		  these are the only items that use ID 2000 and above

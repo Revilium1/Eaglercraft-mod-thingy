@@ -222,6 +222,11 @@ public class Items {
 	public static Item banner;
 
 	public static Item ruby;
+	public static Item ruby_apple;
+	public static Item ruby_helmet;
+	public static Item ruby_chestplate;
+	public static Item ruby_leggings;
+	public static Item ruby_boots;
 
 	private static Item getRegisteredItem(String name) {
 		return (Item) Item.itemRegistry.getObject(new ResourceLocation(name));
@@ -420,6 +425,12 @@ public class Items {
 			banner = getRegisteredItem("banner");
 
 			ruby = getRegisteredItem("ruby");
+			ruby_apple = getRegisteredItem("ruby_apple");
+
+			ruby_helmet = (ItemArmor) getRegisteredItem("ruby_helmet");
+			ruby_chestplate = (ItemArmor) getRegisteredItem("ruby_chestplate");
+			ruby_leggings = (ItemArmor) getRegisteredItem("ruby_leggings");
+			ruby_boots = (ItemArmor) getRegisteredItem("ruby_boots");
 		}
 	}
 }

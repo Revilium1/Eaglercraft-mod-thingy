@@ -1108,6 +1108,11 @@ public class RenderItem implements IResourceManagerReloadListener {
 
 		this.registerItem(Items.ruby, "ruby");
 		this.registerBlock(Blocks.ruby_block, "ruby_block");
+		this.registerItem(Items.ruby_apple, "ruby_apple");
+		this.registerItem(Items.ruby_helmet, "ruby_helmet");
+		this.registerItem(Items.ruby_chestplate, "ruby_chestplate");
+		this.registerItem(Items.ruby_leggings, "ruby_leggings");
+		this.registerItem(Items.ruby_boots, "ruby_boots");
 	}
 
 	public void onResourceManagerReload(IResourceManager var1) {
